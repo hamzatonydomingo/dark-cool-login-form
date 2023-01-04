@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #000;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
+#loginForm{
+    border-radius: 20px;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #008ab5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    width: 50%;
+    box-shadow: 
+        0 0 10px #008ab5,
+        inset 0 0 6px 5px #262626;
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+}
+
+@media screen and (max-width: 1024px) {
+    #loginForm {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #loginForm {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 720px) {
+    #loginForm {
+        width: 97%;
+    }
+}
+
+#loginForm .form-group{
+    padding: 1rem;
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+}
+
+#loginForm  input:not(input[type=submit]){
+    font-size: 1em;
+    padding: 1em;
+    height: 3rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #008ab5 2px;
+    outline: none;
+    color: #777;
+}
+
+#loginForm  input:focus{
+    color: #ccc;
+}
+
+#loginForm input[type=submit]{
+    height: 3rem;
+    font-size: 1.5rem;
+    width: 50%;
+    background-color: rgba(0, 138, 181, 0.34);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
